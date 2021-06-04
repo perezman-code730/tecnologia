@@ -1,33 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/estylocontacto.css">
-    <link rel="stylesheet" href="normalize.css">
-    
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/estylocontacto.css" />
+    <link rel="stylesheet" href="normalize.css" />
+
     <title>Hoja de Contacto</title>
-</head>
-<body>
-    <form action="">
-        <h2>CONTACTO</h2>
-        <input type="text" name="Nombres" placeholder="nombres :">
+  </head>
+  <body>
+    <form action="php/contacto.php" method="POST">
+      <!-- tienes que escribir la ruta en la que está -->
+      <h2>CONTACTO</h2>
+      <input type="text" name="nombre" placeholder="nombre" required /> <br />
+      <br />
 
-        <input type="text" name="Apellidos" placeholder="apellidos :">
+      <input type="text" name="mail" placeholder="mail" required /> <br />
+      <br />
 
-        <input type="text" name="E-mail" placeholder="E-mail :">
+      <input type="phone" name="phone" placeholder="phone" required /> <br />
+      <br />
 
-        <input type="text" name="phone" placeholder="Whatsapp :">
+      <textarea
+        name="mensaje"
+        placeholder="Escriba aqui su mensaje"
+        required
+      ></textarea>
+      <br />
+      <br />
 
-        <textarea name="" 
-          placeholder="Escriba un mensaje...">
-        </textarea>
+      <input type="Submit" value="Enviar" name="envio" />
 
-        <input type="Submit" value="Enviar" id="boton">
-    
+      <script>
+        document.forms["Hoja de Contacto"].submit();
+      </script>
     </form>
-
-        
-
-</body>
+  </body>
 </html>

@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: linear-gradient(130deg, #fafbfc, #33ccccaf);
+  background-size: 100vw 100vh;
+}
+
+.title {
+  background: #2e518b;
+  border-radius: 50px;
+  font-size: 40px;
+  height: 160px;
+  margin-bottom: 0 auto;
+  margin: 100px;
+  text-align: center;
+}
+h1 {
+  color: #fff;
+}
+.boton {
+  background-color: #2e518b;
+  border-radius: 40px;
+  color: #ffffff;
+  font-size: 30px;
+  padding: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.section {
+  margin-left: 600px;
+  margin-top: 90px;
+}
+
+@media screen and (min-width:480px) {
+  width
+}
+@media screen and (min-width:767px){
+
+}
+@media screen and (min-width:950px){
+  
+}

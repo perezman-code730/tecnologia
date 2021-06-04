@@ -5,9 +5,11 @@
 body {
   font-size: 1.3rem;
 }
-
+html{
+  height: 100%;
+}
 /*--------HEADER COMIENZO--------------*/
-header {
+.header {
   background-color: #ce391e;
   height: 60px; /*------MEDIDA--------*/
   position: fixed;
@@ -39,11 +41,11 @@ header {
 
 /*-----------BANNER COMIENZO-------------*/
 .main-banner {
-  background: ;
   border-bottom: 2px solid;
   height: 90px; /*-------MEDIDA-------*/
   padding-top: 90px;
   width: 100%;
+  
 }
 .main-title {
   padding: 5px;
@@ -65,41 +67,54 @@ header {
 
 /*--------BANNER FINAL--------------*/
 
-.main-contenedor {
-  background: #eec6c0;
-  display: flex;
-  justify-content: space-around;
+.grid-contenedor {
+  background: #dbbeb9;
+  display:flex;
+  justify-content: space-between;
   height: 500px;
   width: 100%;
+  
 }
 .main-tec__item {
+  display: grid;
+  grid-template-rows:60px;
   background: #89a584;
   border-top: 4px solid darkred;
-  height: 350px;
+  height: 50px;
   margin-top: 30px;
   text-align: center;
   width: 23%;
+  
+  
 }
 .main-inf__item {
+  display: grid;
+  grid-template-rows:60px;
   background: #d1b284;
   border-top: 4px solid darkred;
-  height: 350px;
+  height: 50px;
   margin-top: 30px;
   text-align: center;
   width: 23%;
+  
+  
 }
 .main-aut__item {
+  display: grid;
+  grid-template-rows:60px;
   background: #96b1b4;
   border-top: 4px solid darkred;
-  height: 350px;
+  height: 50px;
   margin-top: 30px;
   text-align: center;
   width: 23%;
 }
 .main-rob__item {
+  display: grid;
+  grid-template-rows:60px;
   background: #bda6c0;
   border-top: 4px solid darkred;
-  height: 350px;
+  height: 50px;
   margin-top: 30px;
   text-align: center;
   width: 23%;
@@ -107,24 +122,48 @@ header {
 h3 {
   color: rgb(4, 4, 42);
   padding-top: 15px;
+  
 }
 .link {
-  display: flex;
+  align-items: center;
+  background-color: rgb(184, 154, 158);
+  border-radius: 8px;
   color: rgb(4, 4, 42);
   border: 2px solid rgb(8, 47, 83);
   justify-content: center;
   margin-bottom: 45px;
   text-decoration: none;
 }
-
+p{
+  display:flex;
+  justify-content: right;
+}
 /*------------FOOTER--COMIENZO-----------*/
+img{
+  border-radius: 20px;
+  float:left;
+  height: 40px;
+  width: 170px;
+  margin: -30px 0px 0px 150px;
+}
+  
 footer {
-  background-color: #6e5b4c;
-  height: 80px;
+    background-color: #6e5b4c;
+    height: 80px;
 }
 .main-item {
-  color: white;
-  font-size: 25px;
-  padding-top: 20px;
-  text-align: center;
+    color: white;
+    font-size: 15px;
+    padding-top: 20px;
+    text-align: center;
+}
+  
+
+@media (min-width:600px) {
+    .main-contenedor:{
+      grid-template:
+      "header header" 100px
+      "main-tec-item  main-tec-item"100px;
+
+    }
 }

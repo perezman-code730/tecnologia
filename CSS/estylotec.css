@@ -1,21 +1,21 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
-  background: #f5f5f5;  
+body {
+  background: #f5f5f5;
   font-size: 1.3rem;
 }
 
 /*-----------HEADER COMIENZO---------------*/
-header{
-  background-color:  #89a584;;
+header {
+  background-color: #89a584;
   height: 60px; /*------MEDIDA--------*/
   position: fixed;
   left: 0;
-  top:0;
+  top: 0;
   width: 100%;
 }
 .main-menu {
@@ -28,7 +28,7 @@ header{
   padding: 5px 20px;
 }
 
-.main-menu__link{
+.main-menu__link {
   border-color: 2px solid Black;
   color: rgb(255, 254, 254);
   font-size: 1.2em;
@@ -43,28 +43,28 @@ header{
 
 /*-----------SECTION COMIENZO----------*/
 
-.main-section__item img{
-  float:left;
-  height: 400px;
-  padding: 30px;
+.main-section__item img {
+  float: left;
+  height: 300px;
+  padding: 10px;
   width: 300px;
 }
 
-.main-section__item{
+.main-section__item {
   background: #fff;
-  box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
-  margin:auto;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+  margin: auto;
   margin-top: 50px;
   max-width: 1000px;
   padding: 60px;
   width: 100%;
 }
-.title{
-  font-weight:100 ;
-  margin-bottom:40px;
+.title {
+  font-weight: 100;
+  margin-bottom: 40px;
   text-align: center;
 }
-.main-section__item p{
+.main-section__item p {
   margin-top: 20px;
   text-align: justify;
 }
@@ -74,25 +74,24 @@ footer {
   background-color: #6e5b4c;
   height: 80px;
 }
-.vinculo{
+.vinculo {
   display: flex;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.3em;
   justify-content: center;
-  
 }
-.main-item{
+.main-item {
   color: white;
   font-size: 25px;
   padding-top: 20px;
   text-align: center;
 }
+@media screen and (min-width:480px) {
+  width
+}
+@media screen and (min-width:767px){
 
-
-
-
-
-
-
-
-
+}
+@media screen and (min-width:950px){
+  
+}
